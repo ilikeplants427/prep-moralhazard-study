@@ -2,6 +2,8 @@
 
 Applied Econometrics I (ECON 6103), UTSA. By Samantha Morrow, Myranda Menn and Periale Noutaha.
 
+**My role:** I built the full data pipeline (downloading, cleaning and merging the CDC, AIDSVu and Google Trends data in `scripts/01_clean_data.R`) and the replication analysis (the difference-in-differences regressions and figures). My teammates led the extension.
+
 This project replicates Eilam and Delhommer (2021), which asks whether PrEP, the HIV-prevention drug approved in 2012, led to higher rates of other STIs through moral hazard. Using a state-by-year panel (50 states, 2008–2018), it estimates difference-in-differences models with state and year fixed effects (`fixest`) for male and female chlamydia, gonorrhea and syphilis rates. The extension tests whether effects differ by the age of PrEP users and by regional dating-app engagement (Google Trends search interest for "Grindr"), controlling for each state's male same-sex partnership share.
 
 ## Main result
