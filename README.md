@@ -19,7 +19,7 @@ The replicated coefficient on the male PrEP rate for chlamydia is 0.414, compare
 ## How to run
 1. Open this folder as a project in RStudio or Posit Cloud.
 2. Render `prep_replication.qmd`. It reads `data/clean/merged_data.csv`, so no other step is needed to reproduce the report.
-3. To rebuild the merged data from the raw files, run `scripts/01_clean_data.R`. The Google Trends step pulls live data with `gtrendsR` and needs an internet connection. The female STI rates and the same-sex partnership share (`data/raw/male_ssp_by_state.csv`) were added to the merged file separately.
+3. `scripts/01_clean_data.R` shows how the raw files were cleaned and merged. The Google Trends step pulls live data with `gtrendsR` and needs an internet connection. The female STI rates and the same-sex partnership share (`data/raw/male_ssp_by_state.csv`) were added to the merged file in a separate step, so running this script overwrites `merged_data.csv` without those columns. Keep a copy of the included file if you run it.
 
 ## Data sources
 | Data | Source |
